@@ -5,3 +5,17 @@ word_count = text.count("не")
 print('Кількість входжень слова "не":', word_count)
 modified_text = text.replace("чоловік", "воїн")
 print("Модифікований текст:\n", modified_text)
+
+#Сема Ангеліна
+text = "Справжній чоловік не боїться викликів. Він діє швидко, приймає рішення холодним розумом і ніколи не відступає. Його слова важать більше за метал, а вчинки говорять голосніше за будь-які промови."
+
+sentences = text.split('. ')
+print("Текст розділений на речення:")
+for i, sentence in enumerate(sentences, 1):
+    print(f"Речення {i}: {sentence}")
+
+word_position = text.find("діє")
+print("\nПозиція слова 'діє' у тексті:", word_position)
+
+starts_with = text.startswith("Справжній")
+print("\nЧи починається текст зі слова 'Справжній'?", starts_with)
